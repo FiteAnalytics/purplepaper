@@ -78,7 +78,7 @@ then the fund is not required to have a risk manager that has a reporting line t
 This post does not cover the technical details of implementing this rule, but there are many specifics to be worked out and there
 is substantial nuance to how calculations are calibrated and how benchmarks are selected and analyzed.
 
-###Technical issues include but are not limited to:
+### Technical issues include but are not limited to:
 
 - Coverage of Securities and Derivatives across FX, Rate, Equity, Fixed Income and Structured Finance
 
