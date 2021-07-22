@@ -2,15 +2,19 @@
 title: 'SEC Regulation 18f-4 Derivatives Disclosure Rules'
 date: '2021-07-21'
 author: 'Geoff Fite'
-featuredImage: ''
+featuredImage: 'SEC2.jpeg'
 previewText: 'Summary of SEC Rule 18f-4 Requirements'
 ---
+
+![](SEC2.jpeg)
 
 # New SEC Derivatives Disclosure Rules for Hedge Funds: Rule 18f-4
 
 #### The SEC is adopting more comprehensive approach to the regulation of funds’ use of derivatives and the other transactions.
 
-####The rule is effective February 2021 and compliance is expected no later than August 19, 2022.
+#### The rule is effective February 2021 and compliance is expected no later than August 19, 2022.
+
+#### This blog is a quick summary of the rule and what it means for hedge funds.
 
 ## Summary of Rule 18f-4
 
@@ -76,11 +80,11 @@ is substantial nuance to how calculations are calibrated and how benchmarks are 
 
 ###Technical issues include but are not limited to:
 
-- Coverage of Securities and Derivatives across multiple Asset Classes
+- Coverage of Securities and Derivatives across FX, Rate, Equity, Fixed Income and Structured Finance
 
-- Value at Risk (VaR) Methodology and Calibration
+- Value at Risk (VaR) Model and Calibration - historical, monte carlo, parametric?
 
-- Historical Data including Asset Prices
+- Historical Data including asset holdings and prices for all securities including OTC derivatives
 
 - Stress Testing
 

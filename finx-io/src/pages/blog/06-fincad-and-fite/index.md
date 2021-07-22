@@ -2,7 +2,7 @@
 title: 'FINCAD Announces Comprehensive Bond Data and Analytics Service'
 date: '2021-05-05'
 author: 'Geoff Fite'
-featuredImage: ''
+featuredImage: 'fincad_logo1.png'
 previewText: 'Combines Market-Leading Derivatives Analytics Services with Data and Insight on Fixed Income Securities In One Simple Solution'
 ---
 
