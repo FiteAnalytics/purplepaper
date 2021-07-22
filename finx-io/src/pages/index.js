@@ -205,168 +205,168 @@ const StyledItemRow = styled.nav`
 `
 
 const IndexPage = props => {
-  const isDark = useDarkMode()
+    const isDark = useDarkMode()
 
-  const data = useStaticQuery(graphql`
-    {
-      site {
-        siteMetadata {
-          siteUrl
+    const data = useStaticQuery(graphql`
+        {
+            site {
+                siteMetadata {
+                    siteUrl
+                }
+            }
+            newYear: file(relativePath: { eq: "newyear.jpg" }) {
+                childImageSharp {
+                    fluid(maxWidth: 1200) {
+                        ...GatsbyImageSharpFluid_noBase64
+                    }
+                }
+            }
+            banner: file(relativePath: { eq: "fite_partners.png" }) {
+                childImageSharp {
+                    fluid(maxWidth: 1200) {
+                        ...GatsbyImageSharpFluid_noBase64
+                    }
+                }
+            }
+            swap: file(relativePath: { eq: "swap.png" }) {
+                childImageSharp {
+                    fluid(maxWidth: 1200) {
+                        ...GatsbyImageSharpFluid
+                    }
+                }
+            }
+            batch: file(relativePath: { eq: "batch.png" }) {
+                childImageSharp {
+                    fluid(maxWidth: 1200) {
+                        ...GatsbyImageSharpFluid
+                    }
+                }
+            }
+            api: file(relativePath: { eq: "api.png" }) {
+                childImageSharp {
+                    fluid(maxWidth: 1200) {
+                        ...GatsbyImageSharpFluid
+                    }
+                }
+            }
+            security_analytics: file(relativePath: { eq: "bonds_colorful.jpeg" }) {
+                childImageSharp {
+                    fluid(maxWidth: 1200) {
+                        ...GatsbyImageSharpFluid
+                    }
+                }
+            }
+            portfolio_analytics: file(relativePath: { eq: "portfolio.jpeg" }) {
+                childImageSharp {
+                    fluid(maxWidth: 1200) {
+                        ...GatsbyImageSharpFluid
+                    }
+                }
+            }
+            sybil: file(relativePath: { eq: "sybil.png" }) {
+                childImageSharp {
+                    fluid(maxWidth: 1200) {
+                        ...GatsbyImageSharpFluid
+                    }
+                }
+            }
+            tokenlists: file(relativePath: { eq: "tokenlists.png" }) {
+                childImageSharp {
+                    fluid(maxWidth: 1200) {
+                        ...GatsbyImageSharpFluid
+                    }
+                }
+            }
+            discord: file(relativePath: { eq: "discord_logo.png" }) {
+                childImageSharp {
+                    fluid(maxWidth: 1200) {
+                        ...GatsbyImageSharpFluid
+                    }
+                }
+            }
+            twitter: file(relativePath: { eq: "twitter_logo.png" }) {
+                childImageSharp {
+                    fluid(maxWidth: 1200) {
+                        ...GatsbyImageSharpFluid
+                    }
+                }
+            }
+            reddit: file(relativePath: { eq: "reddit_logo.png" }) {
+                childImageSharp {
+                    fluid(maxWidth: 1200) {
+                        ...GatsbyImageSharpFluid
+                    }
+                }
+            }
+            discourse: file(relativePath: { eq: "discourse.png" }) {
+                childImageSharp {
+                    fluid(maxWidth: 1200) {
+                        ...GatsbyImageSharpFluid
+                    }
+                }
+            }
         }
-      }
-      newYear: file(relativePath: { eq: "newyear.jpg" }) {
-        childImageSharp {
-          fluid(maxWidth: 1200) {
-            ...GatsbyImageSharpFluid_noBase64
-          }
-        }
-      }
-      banner: file(relativePath: { eq: "fite_partners.png" }) {
-        childImageSharp {
-          fluid(maxWidth: 1200) {
-            ...GatsbyImageSharpFluid_noBase64
-          }
-        }
-      }
-      swap: file(relativePath: { eq: "swap.png" }) {
-        childImageSharp {
-          fluid(maxWidth: 1200) {
-            ...GatsbyImageSharpFluid
-          }
-        }
-      }
-      batch: file(relativePath: { eq: "batch.png" }) {
-        childImageSharp {
-          fluid(maxWidth: 1200) {
-            ...GatsbyImageSharpFluid
-          }
-        }
-      }
-      api: file(relativePath: { eq: "api.png" }) {
-        childImageSharp {
-          fluid(maxWidth: 1200) {
-            ...GatsbyImageSharpFluid
-          }
-        }
-      }
-      security_analytics: file(relativePath: { eq: "bonds_colorful.jpeg" }) {
-        childImageSharp {
-          fluid(maxWidth: 1200) {
-            ...GatsbyImageSharpFluid
-          }
-        }
-      }
-      portfolio_analytics: file(relativePath: { eq: "portfolio.jpeg" }) {
-        childImageSharp {
-          fluid(maxWidth: 1200) {
-            ...GatsbyImageSharpFluid
-          }
-        }
-      }
-      sybil: file(relativePath: { eq: "sybil.png" }) {
-        childImageSharp {
-          fluid(maxWidth: 1200) {
-            ...GatsbyImageSharpFluid
-          }
-        }
-      }
-      tokenlists: file(relativePath: { eq: "tokenlists.png" }) {
-        childImageSharp {
-          fluid(maxWidth: 1200) {
-            ...GatsbyImageSharpFluid
-          }
-        }
-      }
-      discord: file(relativePath: { eq: "discord_logo.png" }) {
-        childImageSharp {
-          fluid(maxWidth: 1200) {
-            ...GatsbyImageSharpFluid
-          }
-        }
-      }
-      twitter: file(relativePath: { eq: "twitter_logo.png" }) {
-        childImageSharp {
-          fluid(maxWidth: 1200) {
-            ...GatsbyImageSharpFluid
-          }
-        }
-      }
-      reddit: file(relativePath: { eq: "reddit_logo.png" }) {
-        childImageSharp {
-          fluid(maxWidth: 1200) {
-            ...GatsbyImageSharpFluid
-          }
-        }
-      }
-      discourse: file(relativePath: { eq: "discourse.png" }) {
-        childImageSharp {
-          fluid(maxWidth: 1200) {
-            ...GatsbyImageSharpFluid
-          }
-        }
-      }
-    }
-  `)
+    `)
 
-  return (
-    <Layout path={props.location.pathname}>
-      <BGCard>
-        <CardNoise />
-        <CardBGImage isDark={isDark} />
-        <CardFade />
-      </BGCard>
-      <SEO
-        title="Home"
-        path={props.location.pathname}
-        description={'A fully decentralized protocol for automated corporate liquidity'}
-      />
-      <StyledBody>
-        <StyledTitle>
-          <StyledBodyTitle>Capital Markets Data & Analytics</StyledBodyTitle>
-          <StyledBodySubTitle style={{ marginBottom: '3rem' }}>
-            Comprehensive coverage of the global bond markets, in the cloud.
-          </StyledBodySubTitle>
-          <StyledItemRow>
-            <Button
-              style={{
-                background: `linear-gradient(128.17deg, #7A1C99 -14.78%, #D3FF7A 110.05%)`,
-                color: 'white',
-                fontSize: '20px'
-              }}
-              href="/how-it-works"
-            >
-              How It Works
-            </Button>
-            <Button
-              outlined
-              to="/docs/v2/methodology"
-              as={Link}
-              style={{
-                fontSize: '20px'
-              }}
-            >
-              Documentation
-            </Button>
-            <Button
-              outlined
-              to="/faq"
-              as={Link}
-              style={{
-                fontSize: '20px'
-              }}
-            >
-              FAQ
-            </Button>
-          </StyledItemRow>
-        </StyledTitle>
-        <ProtocolData />
+    return (
+        <Layout path={props.location.pathname}>
+            <BGCard>
+                <CardNoise />
+                <CardBGImage isDark={isDark} />
+                <CardFade />
+            </BGCard>
+            <SEO
+                title="Home"
+                path={props.location.pathname}
+                description={'A fully decentralized protocol for automated corporate liquidity'}
+            />
+            <StyledBody>
+                <StyledTitle>
+                    <StyledBodyTitle>Capital Markets Data & Analytics</StyledBodyTitle>
+                    <StyledBodySubTitle style={{ marginBottom: '3rem' }}>
+                        Comprehensive coverage of the global bond markets, in the cloud.
+                    </StyledBodySubTitle>
+                    <StyledItemRow>
+                        <Button
+                            style={{
+                                background: `linear-gradient(128.17deg, #7A1C99 -14.78%, #D3FF7A 110.05%)`,
+                                color: 'white',
+                                fontSize: '20px'
+                            }}
+                            href="/how-it-works"
+                        >
+                            How It Works
+                        </Button>
+                        <Button
+                            outlined
+                            to="/docs/v2/methodology"
+                            as={Link}
+                            style={{
+                                fontSize: '20px'
+                            }}
+                        >
+                            Documentation
+                        </Button>
+                        <Button
+                            outlined
+                            to="/faq"
+                            as={Link}
+                            style={{
+                                fontSize: '20px'
+                            }}
+                        >
+                            FAQ
+                        </Button>
+                    </StyledItemRow>
+                </StyledTitle>
+                <ProtocolData />
 
-        <DeveloperSection data={data} props={props} />
-        <ProductsSection data={data} props={props} />
-      </StyledBody>
-      <BG />
-    </Layout>
-  )
+                <DeveloperSection data={data} props={props} />
+                <ProductsSection data={data} props={props} />
+            </StyledBody>
+            <BG />
+        </Layout>
+    )
 }
 
 export default IndexPage
@@ -396,80 +396,80 @@ const StyledSectionTitle = styled.h1`
 `
 
 const DeveloperSection = props => {
-  return (
-    <>
-      <StyledSectionTitle>One Subscription for All Sectors of the Global Bond Markets.</StyledSectionTitle>
-      <StyledBodySubText>
-        A single subscription includes all reference data -- terms and conditions, schedules, curves, swap rates and prepayment models.
-      </StyledBodySubText>
-        <PlatformData />
-      <StyledBannerImage fadeIn={false} fluid={props.data.banner.childImageSharp.fluid} />
-    </>
-  )
+    return (
+        <>
+            <StyledSectionTitle>One Subscription for All Sectors of the Global Bond Markets.</StyledSectionTitle>
+            <StyledBodySubText>
+                A single subscription includes all reference data -- terms and conditions, schedules, curves, swap rates and prepayment models.
+            </StyledBodySubText>
+            <PlatformData />
+            <StyledBannerImage fadeIn={false} fluid={props.data.banner.childImageSharp.fluid} />
+        </>
+    )
 }
 
 const ProductsSection = props => {
-  return (
-    <>
-      <StyledSectionTitle>Analytics for Securities and Portfolios</StyledSectionTitle>
-      <StyledBodySubText>
-          Analyze any security as of any date, at any price.<br/>Submit 3 data points - <strong>SECURITY ID, DATE,
-          PRICE</strong> - and receive a full analysis of the security.
-      </StyledBodySubText>
-        <StyledBodySubText>
-            Analyze any portfolio as of any date, at market or scenario prices.<br/>Submit portfolio holdings information
-            and receive calculations on <strong>Portfolio Risk, Return and Performance Attribution.</strong>
-        </StyledBodySubText>
-      <StyledItemRow>
-        <StyledExternalLink href={'/docs/v2/methodology/security-analytics'} target="_blank">
-          <StyledProductImage fadeIn={false} fluid={props.data.security_analytics.childImageSharp.fluid} />Security Analytics
-        </StyledExternalLink>
-        <StyledExternalLink href={'/docs/v2/methodology/portfolio-analytics'} target="_blank">
-          <StyledProductImage fadeIn={false} fluid={props.data.portfolio_analytics.childImageSharp.fluid} />Portfolio Analytics
-        </StyledExternalLink>
-      </StyledItemRow>
+    return (
+        <>
+            <StyledSectionTitle>Analytics for Securities and Portfolios</StyledSectionTitle>
+            <StyledBodySubText>
+                Analyze any security as of any date, at any price.<br/>Submit 3 data points - <strong>SECURITY ID, DATE,
+                PRICE</strong> - and receive a full analysis of the security.
+            </StyledBodySubText>
+            <StyledBodySubText>
+                Analyze any portfolio as of any date, at market or scenario prices.<br/>Submit portfolio holdings information
+                and receive calculations on <strong>Portfolio Risk, Return and Performance Attribution.</strong>
+            </StyledBodySubText>
+            <StyledItemRow>
+                <StyledExternalLink href={'/docs/v2/methodology/security-analytics'} target="_blank">
+                    <StyledProductImage fadeIn={false} fluid={props.data.security_analytics.childImageSharp.fluid} />Security Analytics
+                </StyledExternalLink>
+                <StyledExternalLink href={'/docs/v2/methodology/portfolio-analytics'} target="_blank">
+                    <StyledProductImage fadeIn={false} fluid={props.data.portfolio_analytics.childImageSharp.fluid} />Portfolio Analytics
+                </StyledExternalLink>
+            </StyledItemRow>
 
-      <StyledSectionTitle>Get Results via API or Batch</StyledSectionTitle>
-      <StyledBodySubText>
-            Make individual API requests over HTTP, or send us a large list of securities to analyze and we will send you back the
-            results. All of our calculations are available through either delivery mode, including complex result sets such as
-            cash flow vectors, scenario and stress tests, and key rate durations.
-      </StyledBodySubText>
-      <StyledItemRow>
-        <StyledExternalLink href={'/how-it-works'} target="_blank">
-          <StyledProductImage fadeIn={false} fluid={props.data.api.childImageSharp.fluid} />API
-        </StyledExternalLink>
-        <StyledExternalLink href={'/how-it-works'} target="_blank">
-          <StyledProductImage fadeIn={false} fluid={props.data.batch.childImageSharp.fluid} />BATCH
-        </StyledExternalLink>
-      </StyledItemRow>
+            <StyledSectionTitle>Get Results via API or Batch</StyledSectionTitle>
+            <StyledBodySubText>
+                Make individual API requests over HTTP, or send us a large list of securities to analyze and we will send you back the
+                results. All of our calculations are available through either delivery mode, including complex result sets such as
+                cash flow vectors, scenario and stress tests, and key rate durations.
+            </StyledBodySubText>
+            <StyledItemRow>
+                <StyledExternalLink href={'/how-it-works'} target="_blank">
+                    <StyledProductImage fadeIn={false} fluid={props.data.api.childImageSharp.fluid} />API
+                </StyledExternalLink>
+                <StyledExternalLink href={'/how-it-works'} target="_blank">
+                    <StyledProductImage fadeIn={false} fluid={props.data.batch.childImageSharp.fluid} />BATCH
+                </StyledExternalLink>
+            </StyledItemRow>
 
-      <StyledSectionTitle>Superpowers for Quantitative Developers.</StyledSectionTitle>
-      <StyledBodySubText>
-        Check out the <Link to="/docs/v2/">documentation</Link>, the{' '}
-        <Link to="/docs/v2/technology/developer-guide">quick start</Link> or a guide below to integrate your workflows and
-          your portfolio content with APIs and batch processes.
-      </StyledBodySubText>
-      <StyledSectionFlex style={{ paddingBottom: '0px', paddingTop: '1rem' }}>
-        <Wizard />
-      </StyledSectionFlex>
+            <StyledSectionTitle>Superpowers for Quantitative Developers.</StyledSectionTitle>
+            <StyledBodySubText>
+                Check out the <Link to="/docs/v2/">documentation</Link>, the{' '}
+                <Link to="/docs/v2/technology/developer-guide">quick start</Link> or a guide below to integrate your workflows and
+                your portfolio content with APIs and batch processes.
+            </StyledBodySubText>
+            <StyledSectionFlex style={{ paddingBottom: '0px', paddingTop: '1rem' }}>
+                <Wizard />
+            </StyledSectionFlex>
 
-      <StyledSectionTitle>A global community of Bond Enthusiasts.</StyledSectionTitle>
-      <StyledBodySubText>
-        Learn more about Fite Analytics, chat with the team, others in the community, and have your say in shaping the future
-        of the platform.
-      </StyledBodySubText>
-      <StyledItemRow>
-        <StyledExternalLink href={'https://discord.gg/edAfmhvSev'} target="_blank">
-          <StyledProductImage fadeIn={false} fluid={props.data.discord.childImageSharp.fluid} />
-        </StyledExternalLink>
-        <StyledExternalLink href={'https://twitter.com/fiteanalytics'} target="_blank">
-          <StyledProductImage fadeIn={false} fluid={props.data.twitter.childImageSharp.fluid} />
-        </StyledExternalLink>
-        <StyledExternalLink href={'https://www.reddit.com/r/fiteanalytics'} target="_blank">
-          <StyledProductImage fadeIn={false} fluid={props.data.reddit.childImageSharp.fluid} />
-        </StyledExternalLink>
-      </StyledItemRow>
-    </>
-  )
+            <StyledSectionTitle>A global community of Bond Enthusiasts.</StyledSectionTitle>
+            <StyledBodySubText>
+                Learn more about Fite Analytics, chat with the team, others in the community, and have your say in shaping the future
+                of the platform.
+            </StyledBodySubText>
+            <StyledItemRow>
+                <StyledExternalLink href={'https://discord.gg/edAfmhvSev'} target="_blank">
+                    <StyledProductImage fadeIn={false} fluid={props.data.discord.childImageSharp.fluid} />
+                </StyledExternalLink>
+                <StyledExternalLink href={'https://twitter.com/fiteanalytics'} target="_blank">
+                    <StyledProductImage fadeIn={false} fluid={props.data.twitter.childImageSharp.fluid} />
+                </StyledExternalLink>
+                <StyledExternalLink href={'https://www.reddit.com/r/fiteanalytics'} target="_blank">
+                    <StyledProductImage fadeIn={false} fluid={props.data.reddit.childImageSharp.fluid} />
+                </StyledExternalLink>
+            </StyledItemRow>
+        </>
+    )
 }

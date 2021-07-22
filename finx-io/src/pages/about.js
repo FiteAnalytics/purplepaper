@@ -127,7 +127,7 @@ export const GET_BLOCK = gql`
 
 export const ETH_PRICE = block => {
   const queryString = block
-    ? `
+      ? `
     query bundles {
       bundles(where: { id: ${1} } block: {number: ${block}}) {
         id
@@ -135,7 +135,7 @@ export const ETH_PRICE = block => {
       }
     }
   `
-    : ` query bundles {
+      : ` query bundles {
       bundles(where: { id: ${1} }) {
         id
         ethPrice
@@ -245,11 +245,11 @@ const About = props => {
   }
 
   return (
-    <Layout path={props.location.pathname}>
-      <BG />
+      <Layout path={props.location.pathname}>
+        <BG />
 
-      <SEO title="About" path={props.location.pathname} />
-      <StyledAbout>
+        <SEO title="About" path={props.location.pathname} />
+        <StyledAbout>
         <span style={{ marginTop: '5rem' }}>
           <Title style={{ paddingBottom: '4rem' }}>
             Fite Analytics is a Data Processing and Analytics company.
@@ -261,7 +261,7 @@ const About = props => {
           <StyledSectionFlex id="about" style={{ flexDirection: 'column' }}>
             <p>Fite Analytics is a cloud-native analytics company that specializes in the global bond markets.</p>
             <p>Fite Analytics partners with data vendors to bring together the largest cloud-native security database available today. Currently
-            Fite Analytics SecDB has over <span style={{ display: 'inline' }}><h4><strong>30 million</strong> securities.</h4></span></p>
+            Fite Analytics SecDB has over <span style={{ display: 'inline' }}><h4><strong>3 million</strong> securities.</h4></span></p>
             <p>Our analytic calculations produce street-standard results across all bond sectors, including hard-to-value
             securities such as structured products, convertibles and hedged positions.</p>
             <h1>Security Sectors Covered</h1>
@@ -384,8 +384,8 @@ const About = props => {
             </p>
           </StyledSectionFlex>
         </span>
-      </StyledAbout>
-    </Layout>
+        </StyledAbout>
+      </Layout>
   )
 }
 

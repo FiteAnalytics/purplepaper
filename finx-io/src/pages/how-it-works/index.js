@@ -258,7 +258,7 @@ const About = props => {
             <span><strong>Batch Analytics and APIs </strong></span> for analyzing individual securities and portfolios.{' '}
           </h2>
           <StyledSectionFlex id="about" style={{ flexDirection: 'column' }}>
-            <h4><strong>Send us a small amount of information (security id, date, price) and we send you back a battery of analytics on any security we cover (over 30 million).<br/>
+            <h4><strong>Send us a small amount of information (security id, date, price) and we send you back a battery of analytics on any security we cover (over 3 million).<br/>
                 Send your portfolio holdings and/or transactions and receive detailed analysis and reports.</strong></h4>
           </StyledSectionFlex>
           <StyledSectionFlex id="about" style={{ flexDirection: 'column' }}>
