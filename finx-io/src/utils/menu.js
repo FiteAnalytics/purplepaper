@@ -21,8 +21,12 @@ const menu = [
         name: 'Performance Attribution',
         link: '/docs/v2/methodology/performance-attribution',
         description: 'Shift, twist, allocation & selection'
+      },
+      {
+        name: 'Value at Risk',
+        link: '/docs/v2/methodology/value-at-risk',
+        description: 'Rule 18f-4 VaR Calculations, Stress Testing and Compliance'
       }
-
     ]
   },
   {
