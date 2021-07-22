@@ -3,7 +3,7 @@ title: Value at Risk
 tags: value-at-risk, regulations, documentation
 ---
 # Value at Risk
-Value at Risk (VaR) is a measure of expected loss at a specific confidence interval over a specific horizon.
+Value at Risk (VaR) is a measure of worst-case loss at a specific confidence interval over a specific horizon.
 The Fite Platform can run all VaR implementations (parametric, historical, & Monte Carlo), but our default is to use Monte Carlo calibrated by the historical time series of the portfolio, related securities, and other benchmarks. Our VaR calculations on securities and portfolios are highly configurable, accommodating a variety of stress tests and other techniques in risk management, such as SEC Rule 18f-4 for hedge funds holding derivatives.
 # SEC Rule 18f-4 Services
 Fite Analytics provides complete Rule 18f-4 Value at Risk calculations across all asset classes and security types. Our services
