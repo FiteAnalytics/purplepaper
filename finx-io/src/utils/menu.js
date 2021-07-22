@@ -25,7 +25,7 @@ const menu = [
       {
         name: 'Value at Risk',
         link: '/docs/v2/methodology/value-at-risk',
-        description: 'Rule 18f-4 VaR Calculations, Stress Testing and Compliance'
+        description: 'Rule 18f VaR Calculations, Stress Testing and Compliance'
       }
     ]
   },
